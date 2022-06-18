@@ -90,32 +90,7 @@ h1 {
     margin: 30px 30px 0px 20px;
     width: 300px;
     height: 100%;
-    overflow:hidden 
-    /*
-    Animaciones como esta pueden hacer que la página se vuelva más ancha
-    que la ventana del navegador. Para evitar este problema, pon el elemento 
-    que será animado en un contenedor y agrega overflow:hidden en el contenedor.
-    */
 }
-
-/* Animacion  */
-.mune {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 200%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
 
 .card {
     display: grid;

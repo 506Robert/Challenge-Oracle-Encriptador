@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    background-image: url(img/fondo.jpg)
+}
+
+h1 {
+    padding: 20px 4px;
+    float: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    opacity: 90%;
+}
+
+.campo-captura {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 15% 0px 0px 50px;
+    gap: 8%;
+    align-items: end;
+}
+
+.campo-captura textarea {
+    border: none;
+    font: 28px 'Inter', sans-serif;
+    resize: none;
+    color: #0A3871;
+    outline: none;
+    border-radius: 32px;
+    padding: 2%;
+}
+
+.campo-captura ::placeholder {
+    color: #0A3871;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.button-encriptar {
+    width: 85%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgb(30, 25, 125);
+    border: none;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.button-encriptar:hover {
+    background: rgb(22, 14, 79);
+    transform: scale(1.2);
+}
+
+
+.button-desencriptar {
+    width: 85%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgb(30, 25, 125);
+    border: none;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.button-desencriptar:hover {
+    background: rgb(22, 14, 79);
+    transform: scale(1.2);
+}
+
+.campo-resultado {
+    display: grid;
+    background-color: #FFFFFF;
+    border-style: hidden;
+    border-radius: 32px;
+    margin: 30px 30px 0px 20px;
+    width: 300px;
+    height: 100%;
+    overflow:hidden 
+    /*
+    Animaciones como esta pueden hacer que la página se vuelva más ancha
+    que la ventana del navegador. Para evitar este problema, pon el elemento 
+    que será animado en un contenedor y agrega overflow:hidden en el contenedor.
+    */
+}
+
+/* Animacion  */
+.mune {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+.card {
+    display: grid;
+    grid-template-rows: auto;
+    width: 200px;
+    margin: auto;
+    background: none;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+}
+
+.card img {
+    background: none;
+    width: 200px;
+}
+
+.card h2 {
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card p {
+    background: none;
+    font-size: 14px;
+}
+
+.card2 {
+    display: block;
+    margin: 30px 20px 0px 20px;
+    background: none;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #343A40;
+}
+
+.resultado {
+    background-color: #FFFFFF;
+    border-style: hidden;
+    margin: auto;
+    width: 80%;
+    height: 78%;
+    outline: none;
+    resize: none;
+    color: #495057;
+    font: 20px 'Inter', sans-serif;
+}
+
+.button-copiar {
+    width: 50%;
+    height: 60px;
+    font-size: 14px;
+    margin: auto;
+    color: white;
+    background: rgb(30, 25, 125);
+    border: none;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.button-copiar:hover {
+    background: rgb(22, 14, 79);
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    opacity: 80%;
+}
+
+ul {
+    margin: 25px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+li {
+    list-style: none;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.git {
+    width: 27px;
+}
+
+.link {
+    width: 30px;
+}
+
+@media screen and (max-width:480px) {
+
+    h1 {
+        float: none;
+        display: block;
+        padding: 16px 24px;
+    }
+
+    .container {
+        display: inline;
+        margin: auto;
+    }
+
+    .campo-captura {
+        margin: 80px 20px 0 20px;
+        gap: 10px;
+    }
+
+    .campo-captura textarea {
+        font-size: 32px;
+        height: 300px;
+    }
+
+    .campo-resultado {
+        margin: 20px;
+        width: auto;
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .button-encriptar,
+    .button-desencriptar {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .campo-resultado {
+        margin: 0 20px 35px 20px;
+        padding: 30px 0;
+        box-shadow: 0px 24px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+        display: none;
+    }
+
+}
